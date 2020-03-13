@@ -58,7 +58,9 @@ window.open('login.php','_self');
 else{
     $data=mysqli_fetch_assoc($run);
     echo $id=$data['id'];
-
+session_start();
+$_SESSION['uid']=$id;
+header('location:admin/admindash.php');
 
 
 }
