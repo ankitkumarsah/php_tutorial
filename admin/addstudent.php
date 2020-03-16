@@ -67,7 +67,7 @@ $name = $_POST['name'];
 $city = $_POST['city'];
 $pcon = $_POST['pcon'];
 $std = $_POST['std'];
-$qry="INSERT INTO `student`(`rollno`, `name`, `city`, `pcont`, `standerd`) VALUES ('$rollno','$name','$city','pcon','std')";
+$qry="INSERT INTO `student`(`rollno`, `name`, `city`, `pcont`, `standerd`) VALUES ('$rollno','$name','$city','$pcon','$std')";
 
 $run= mysqli_query($con,$qry);
 
